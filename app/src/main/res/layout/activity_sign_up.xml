@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="Name"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter First Name"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="Email"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="Password"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="Phone Number"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Phone Number"
+                android:inputType="phone"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="School Name"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_school_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_school_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter School Name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/ic_baseline_school_24"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="Country"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Country"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/ic_baseline_location_city_24"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="State"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter State"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:drawableStart="@drawable/ic_baseline_location_city_24" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font"
+                android:padding="20dp"
+                android:text="City"
+                android:textColor="#00189E"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CADEEF"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter city name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:drawableStart="@drawable/ic_baseline_location_city_24" />
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background"
+                android:padding="15dp"
+                android:text="Sign Up"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
