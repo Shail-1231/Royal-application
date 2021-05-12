@@ -12,7 +12,7 @@
         <activity
             android:name=".NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.RoyalApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.RoyalApplication.NoActionBar"/>
         <activity android:name=".ForgotActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".MainActivity" />
