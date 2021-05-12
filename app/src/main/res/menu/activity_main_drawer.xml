@@ -23,7 +23,7 @@
         <item
             android:id="@+id/nav_see_gifts"
             android:icon="@drawable/ic_baseline_preview_24"
-            android:title="See gifts"
+            android:title="See my gifts"
             tools:ignore="HardcodedText" />
 
         <item

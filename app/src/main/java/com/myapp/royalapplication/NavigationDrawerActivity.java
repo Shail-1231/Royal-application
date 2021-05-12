@@ -1,9 +1,12 @@
 package com.myapp.royalapplication;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -24,6 +27,9 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
     Toolbar toolbar;
     NavigationView navigationView;
     DrawerLayout drawerLayout;
+    TextView studentProfile;
+    String name, email, password;
+    Integer credits;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +39,13 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
+        studentProfile = findViewById(R.id.nav_tv_student_profile);
+        SharedPreferences sharedPreferences = getSharedPreferences("MYAPP", MODE_PRIVATE);
+        name = sharedPreferences.getString("KEY_NAME", "");
+        email = sharedPreferences.getString("KEY_EMAIL", "");
+        password = sharedPreferences.getString("KEY_PASSWORD", "");
+        credits = sharedPreferences.getInt("KEY_CREDITS", 0);
+        //studentProfile.setText("hey there");
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,
                 R.string.nav_app_bar_open_drawer_description, R.string.nav_app_bar_open_drawer_description);
