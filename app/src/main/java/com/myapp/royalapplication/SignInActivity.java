@@ -3,6 +3,7 @@ package com.myapp.royalapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -70,34 +71,27 @@ public class SignInActivity extends AppCompatActivity {
                 String em = email.getText().toString();
                 String pass = password.getText().toString();
 
-                if(em.length() < 10)
-                {
+                if (em.length() < 10) {
                     error = true;
                     Toast.makeText(SignInActivity.this, "Enter valid email", Toast.LENGTH_LONG).show();
                 }
 
-                if(pass.length() < 5)
-                {
+                if (pass.length() < 5) {
                     error = true;
                     Toast.makeText(SignInActivity.this, "Enter valid password", Toast.LENGTH_LONG).show();
                 }
 
-                if(error)
-                {
+                if (error) {
                     Toast.makeText(SignInActivity.this, "Enter valid credentials", Toast.LENGTH_LONG).show();
-                }
-
-                else
-                {
+                } else {
                     mAuth.signInWithEmailAndPassword(em, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful())
-                            {
-                                if(mAuth.getCurrentUser().isEmailVerified())
-                                {
+                            if (task.isSuccessful()) {
+                                if (mAuth.getCurrentUser().isEmailVerified()) {
                                     String uid = mAuth.getUid();
                                     databaseReference.child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
+                                        @SuppressLint("ApplySharedPref")
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
 
@@ -127,12 +121,10 @@ public class SignInActivity extends AppCompatActivity {
                                         }
                                     });
 
-                                }else
-                                {
-                                    Toast.makeText(SignInActivity.this, "Please verify email address", Toast.LENGTH_LONG).show();
+                                } else {
+                                    Toast.makeText(SignInActivity.this, "Please verify email address or check internet connection", Toast.LENGTH_LONG).show();
                                 }
-                            }
-                            else {
+                            } else {
                                 Toast.makeText(SignInActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
                             }
                         }
