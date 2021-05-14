@@ -30,6 +30,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/nav_boot_camp"
+        android:name="com.myapp.royalapplication.ui.BootCampFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_boot_camp" />
+
+    <fragment
         android:id="@+id/nav_add_gifts"
         android:name="com.myapp.royalapplication.ui.AddGiftsFragment"
         android:label="Home"

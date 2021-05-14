@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +8,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +32,9 @@
                 android:id="@+id/edt_first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_person_24"
                 android:drawableLeft="@drawable/ic_baseline_person_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter First Name"
@@ -41,7 +42,6 @@
                 android:padding="20dp"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/ic_baseline_person_24"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -59,7 +59,9 @@
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_email_24"
                 android:drawableLeft="@drawable/ic_baseline_email_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter Email Address"
@@ -67,7 +69,6 @@
                 android:padding="20dp"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/ic_baseline_email_24"
                 tools:ignore="HardcodedText" />
 
 
@@ -87,6 +88,7 @@
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
                 android:drawableStart="@drawable/ic_baseline_lock_24"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
@@ -113,7 +115,9 @@
                 android:id="@+id/edt_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
                 android:drawableLeft="@drawable/ic_baseline_local_phone_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter Phone Number"
@@ -121,7 +125,6 @@
                 android:padding="20dp"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/ic_baseline_local_phone_24"
                 tools:ignore="HardcodedText" />
 
 
@@ -140,7 +143,9 @@
                 android:id="@+id/edt_school_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_school_24"
                 android:drawableLeft="@drawable/ic_baseline_school_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter School Name"
@@ -148,7 +153,6 @@
                 android:padding="20dp"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/ic_baseline_school_24"
                 tools:ignore="HardcodedText" />
 
 
@@ -167,7 +171,9 @@
                 android:id="@+id/edt_country"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_location_city_24"
                 android:drawableLeft="@drawable/ic_baseline_location_city_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter Country"
@@ -175,7 +181,6 @@
                 android:padding="20dp"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/ic_baseline_location_city_24"
                 tools:ignore="HardcodedText" />
 
 
@@ -194,7 +199,9 @@
                 android:id="@+id/edt_state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_location_city_24"
                 android:drawableLeft="@drawable/ic_baseline_location_city_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter State"
@@ -202,8 +209,7 @@
                 android:padding="20dp"
                 android:textColor="#000"
                 android:textSize="20sp"
-                tools:ignore="HardcodedText"
-                android:drawableStart="@drawable/ic_baseline_location_city_24" />
+                tools:ignore="HardcodedText" />
 
 
             <TextView
@@ -222,6 +228,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#CADEEF"
+                android:drawableStart="@drawable/ic_baseline_location_city_24"
                 android:drawableLeft="@drawable/ic_baseline_location_city_24"
                 android:drawablePadding="20dp"
                 android:hint="Enter city name"
@@ -230,7 +237,7 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
-                android:drawableStart="@drawable/ic_baseline_location_city_24" />
+                android:autofillHints="" />
 
             <Button
                 android:id="@+id/btn_sign_up"

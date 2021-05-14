@@ -13,9 +13,14 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.myapp.royalapplication.ui.AddGiftsFragment;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.core.view.GravityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -64,8 +69,8 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(id == R.id.nav_logout)
-        {
+        Fragment fragment = null;
+        if (id == R.id.nav_logout) {
             SharedPreferences sharedPreferences = getSharedPreferences("MYAPP", MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.remove("KEY_NAME");
@@ -77,7 +82,17 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
             Intent i = new Intent(NavigationDrawerActivity.this, SignInActivity.class);
             startActivity(i);
             finish();
+        } else if (id == R.id.nav_add_gifts) {
+            fragment = new AddGiftsFragment();
         }
+
+        if (fragment != null) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, fragment);
+            fragmentTransaction.commit();
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
 
     }
