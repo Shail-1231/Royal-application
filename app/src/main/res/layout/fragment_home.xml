@@ -1,23 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/r_bg_2"
     tools:context=".ui.HomeFragment">
 
+    <ImageView
+        android:id="@+id/imv_face"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/face_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:layout_below="@id/imv_face"
+        android:text="Payton Rogers"
+        android:textSize="35sp"
+        android:textColor="#EFEDED"
+        android:fontFamily="@font/source_sans"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sample_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:text="xyz@gamil.com"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_inner"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_sample_email"
+        android:layout_marginBottom="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/home_page_inner_layout">
+
+    <ImageView
+        android:id="@+id/imv_house"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/house_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_school_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_house"
+        android:text="School Details"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/source_sans"
+        android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/edt_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_school_details"
+            android:layout_marginTop="4dp"
+            android:background="#323030" />
+
+
+
+    <TextView
+        android:id="@+id/tv_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_school_details"
+        android:text="Credits"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="@font/source_sans"
+        android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/edt_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_credits"
+            android:layout_marginTop="4dp"
+            android:background="#323030" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="400"
+            android:layout_below="@id/edt_line_2"
+            android:layout_marginTop="4dp"
+            android:textSize="40sp"
+            android:layout_marginHorizontal="15dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_queries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For queries please contact   9376139635"
+        android:layout_below="@id/rl_inner"
+        android:gravity="center_horizontal"
+        android:background="@drawable/queries_box"
+        android:layout_marginHorizontal="30dp"
+        android:padding="13dp"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>
