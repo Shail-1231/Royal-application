@@ -14,6 +14,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 import com.myapp.royalapplication.ui.AddGiftsFragment;
+import com.myapp.royalapplication.ui.HomeFragment;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -84,8 +85,9 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
             finish();
         } else if (id == R.id.nav_add_gifts) {
             fragment = new AddGiftsFragment();
+        } else if (id == R.id.nav_home) {
+            fragment = new HomeFragment();
         }
-
         if (fragment != null) {
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, fragment);

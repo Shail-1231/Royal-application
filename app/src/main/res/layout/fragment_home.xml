@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,61 +11,67 @@
         android:id="@+id/imv_face"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:src="@drawable/face_home"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+        android:src="@drawable/face_home"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imv_face"
-        android:text="Payton Rogers"
-        android:textSize="35sp"
-        android:textColor="#EFEDED"
         android:fontFamily="@font/source_sans"
         android:gravity="center_horizontal"
-        android:textStyle="bold" />
+        android:text="Payton Rogers"
+        android:textColor="#EFEDED"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/tv_sample_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edt_name"
+        android:gravity="center_horizontal"
         android:text="xyz@gamil.com"
         android:textColor="#fff"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
     <RelativeLayout
         android:id="@+id/rl_inner"
         android:layout_width="600dp"
         android:layout_height="300dp"
-        android:layout_marginTop="20dp"
         android:layout_below="@id/tv_sample_email"
-        android:layout_marginBottom="35dp"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
         android:background="@drawable/home_page_inner_layout">
 
-    <ImageView
-        android:id="@+id/imv_house"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/house_2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        <ImageView
+            android:id="@+id/imv_house"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/house_2"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
 
-    <TextView
-        android:id="@+id/tv_school_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imv_house"
-        android:text="School Details"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="15dp"
-        android:fontFamily="@font/source_sans"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_school_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imv_house"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/source_sans"
+            android:text="School Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <View
             android:id="@+id/edt_line"
@@ -76,18 +82,18 @@
             android:background="#323030" />
 
 
-
-    <TextView
-        android:id="@+id/tv_credits"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_school_details"
-        android:text="Credits"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
-        android:layout_marginHorizontal="15dp"
-        android:fontFamily="@font/source_sans"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_school_details"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/source_sans"
+            android:text="Credits"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <View
             android:id="@+id/edt_line_2"
@@ -101,11 +107,12 @@
             android:id="@+id/tv_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="400"
             android:layout_below="@id/edt_line_2"
+            android:layout_marginHorizontal="15dp"
             android:layout_marginTop="4dp"
+            android:text="400"
             android:textSize="40sp"
-            android:layout_marginHorizontal="15dp"/>
+            tools:ignore="HardcodedText" />
 
     </RelativeLayout>
 
@@ -113,20 +120,16 @@
         android:id="@+id/tv_queries"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="For queries please contact   9376139635"
         android:layout_below="@id/rl_inner"
-        android:gravity="center_horizontal"
-        android:background="@drawable/queries_box"
         android:layout_marginHorizontal="30dp"
-        android:padding="13dp"
-        android:textSize="15sp"
-        android:textColor="#fff"
         android:layout_marginTop="50dp"
-        />
-
-
-
-
+        android:background="@drawable/queries_box"
+        android:gravity="center_horizontal"
+        android:padding="13dp"
+        android:text="For queries please contact   9376139635"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
 
 
 </RelativeLayout>
