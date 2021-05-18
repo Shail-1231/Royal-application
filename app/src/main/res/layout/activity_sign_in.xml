@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/r_bg_2"
+    android:background="@drawable/background_2"
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".SignInActivity">
@@ -168,7 +168,7 @@
             android:fontFamily="@font/source_sans"
             android:text="Register"
             android:textAllCaps="false"
-            android:textColor="#1E2A6A"
+            android:textColor="#324D66"
             android:textSize="15sp"
             android:textStyle="bold"
             tools:ignore="HardcodedText" />
