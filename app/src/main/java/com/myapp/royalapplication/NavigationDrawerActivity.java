@@ -13,7 +13,9 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+import com.myapp.royalapplication.ui.AboutUsFragment;
 import com.myapp.royalapplication.ui.AddGiftsFragment;
+import com.myapp.royalapplication.ui.BootCampFragment;
 import com.myapp.royalapplication.ui.HomeFragment;
 
 import androidx.annotation.NonNull;
@@ -87,6 +89,10 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
             fragment = new AddGiftsFragment();
         } else if (id == R.id.nav_home) {
             fragment = new HomeFragment();
+        } else if(id == R.id.nav_about_us){
+            fragment = new AboutUsFragment();
+        }else if(id == R.id.nav_boot_camp){
+            fragment = new BootCampFragment();
         }
         if (fragment != null) {
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

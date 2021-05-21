@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_2"
+    android:background="@drawable/background_splash_screen"
     tools:context=".ui.AddGiftsFragment">
 
 
@@ -21,8 +21,9 @@
             android:fontFamily="@font/source_sans"
             android:gravity="center_horizontal"
             android:text="Gift Options"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="40sp"
+            android:textStyle="bold"
             tools:ignore="HardcodedText" />
 
 
@@ -34,7 +35,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/custom_font"
             android:text="Toys"
-            android:textColor="#FFF"
+            android:textColor="#000000"
             android:textSize="30sp"
             tools:ignore="HardcodedText" />
 
@@ -171,7 +172,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/custom_font"
             android:text="Books"
-            android:textColor="#FFF"
+            android:textColor="#000000"
             android:textSize="30sp"
             tools:ignore="HardcodedText" />
 
@@ -308,7 +309,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/custom_font"
             android:text="Food"
-            android:textColor="#FFF"
+            android:textColor="#000000"
             android:textSize="30sp"
             tools:ignore="HardcodedText" />
 

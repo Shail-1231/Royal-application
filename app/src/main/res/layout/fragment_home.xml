@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_2"
+    android:background="@drawable/background_splash_screen"
     tools:context=".ui.HomeFragment">
 
     <ImageView
@@ -24,7 +24,7 @@
         android:fontFamily="@font/source_sans"
         android:gravity="center_horizontal"
         android:text="Payton Rogers"
-        android:textColor="#EFEDED"
+        android:textColor="#B5000000"
         android:textSize="35sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
@@ -36,7 +36,7 @@
         android:layout_below="@id/edt_name"
         android:gravity="center_horizontal"
         android:text="xyz@gamil.com"
-        android:textColor="#fff"
+        android:textColor="#B5000000"
         android:textSize="20sp"
         tools:ignore="HardcodedText" />
 
